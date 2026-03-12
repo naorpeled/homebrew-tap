@@ -5,21 +5,21 @@
 class Aitutor < Formula
   desc "Interactive terminal tutorial for AI coding concepts"
   homepage "https://github.com/naorpeled/aitutor"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/naorpeled/aitutor/releases/download/v0.1.6/aitutor_darwin_amd64.tar.gz"
-      sha256 "eed73a156352a128e1aa77a0062209dcd0312a964862eda0ab480a5ff04994dc"
+      url "https://github.com/naorpeled/aitutor/releases/download/v0.1.7/aitutor_darwin_amd64.tar.gz"
+      sha256 "79ad090489c6624b64602bf321db4872fff5ba6ba1684e838b726c54e5338c07"
 
       define_method(:install) do
         bin.install "aitutor"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/naorpeled/aitutor/releases/download/v0.1.6/aitutor_darwin_arm64.tar.gz"
-      sha256 "133aa5b54116f5edb67b445879368bba183642de35c4081103869710b4a71ff5"
+      url "https://github.com/naorpeled/aitutor/releases/download/v0.1.7/aitutor_darwin_arm64.tar.gz"
+      sha256 "42f8692bf0e9b1b557c2612856a220cdba41cae3f55ab1c713092ce94c8097f5"
 
       define_method(:install) do
         bin.install "aitutor"
@@ -29,15 +29,15 @@ class Aitutor < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/naorpeled/aitutor/releases/download/v0.1.6/aitutor_linux_amd64.tar.gz"
-      sha256 "fee5ba712e8a2b9ad3c818d0efb7c3838a11a6a5c7ee023780dcb8ee82b8d846"
+      url "https://github.com/naorpeled/aitutor/releases/download/v0.1.7/aitutor_linux_amd64.tar.gz"
+      sha256 "0a3a49db07e909222e71c27f21f981e70bb50d02efd3abe0fe41da6c459de609"
       define_method(:install) do
         bin.install "aitutor"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/naorpeled/aitutor/releases/download/v0.1.6/aitutor_linux_arm64.tar.gz"
-      sha256 "7f7bdc1eb50dda159102231e91b7cd561a22451800fb08dfbb2e18da4b0b7fec"
+      url "https://github.com/naorpeled/aitutor/releases/download/v0.1.7/aitutor_linux_arm64.tar.gz"
+      sha256 "fdcb707cdfbb2570a3300724bbfdaa369be3e4324fe1b91c67d08dfa91e00455"
       define_method(:install) do
         bin.install "aitutor"
       end
